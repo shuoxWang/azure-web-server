@@ -9,6 +9,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const port = process.env.PORT;
+
 const {
     CLUSTER_URI,
     CLIENT_ID,
@@ -43,6 +45,6 @@ app.post("/query-kusto", async (req, res) => {
     }
 });
 
-app.listen(3001, () => {
+app.listen(port, () => {
     console.log("Running!");
 })
