@@ -2,6 +2,7 @@
   "name": "azure-web-server",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
   },
   "keywords": [],
